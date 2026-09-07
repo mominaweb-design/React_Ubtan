@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.contact-page-wrapper {
+  background-color: #F7F1E8;
+  font-family: 'Poppins', sans-serif;
+  color: #2D2D2D;
+}
+
+/* Main Background Container */
+.contact-main-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 140px);
+}
+
+/* Left Content Styles */
+.contact-subheading {
+  font-size: 18px;
+  color: #4A4A4A;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 900;
+  color: #2D2D2D;
+}
+
+.info-icon-circle {
+  width: 36px;
+  border-radius: 50%;
+  background-color: rgba(189, 91, 62, 0.15);
+  color: #6D2D24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.info-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2D2D2D;
+}
+
+
+/* ===================================
+   MINI MAP CARD
+=================================== */
+
+.mini-map-card {
+  width: 100%;
+  max-width: 520px;
+  height: 250px;
+  /* margin-top: 50px; */
+  margin-left:30px ;
+  margin-bottom: 100px;
+  border-radius: 16px;
+ 
+  
+}
+
+
+/* Individual Pin Wrapper */
+.mini-map-pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+/* Maroon Icon */
+.mini-pin-icon {
+  color:#6D2D24;
+  font-size: 26px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.15));
+}
+
+/* Pin Label Text */
+.mini-pin-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2b2b2b;
+  line-height: 1.1;
+  margin-top: 3px;
+  pointer-events: none;
+}
+
+/* Pin Positions */
+/* .pin-lahore {
+  top: 42%;
+  left: 41%;
+}
+
+.pin-rawalpindi {
+  top: 56%;
+  left: 70%;
+} */
+
+/* ===================================
+   RIGHT SIDE FORM CARD
+=================================== */
+
+.contact-form-card {
+  background-color:#6D2D24  ;
+  border-radius: 20px !important;
+}
+
+.form-custom-label {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.form-custom-input {
+  background-color: #F7F1E8 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 14px;
+  color: #2D2D2D;
+  font-size: 14px;
+}
+
+.form-custom-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Submit Button */
+.submit-msg-btn {
+  background-color: #832F2C;
+  color: #FFFFFF !important;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.submit-msg-btn:hover {
+  background-color: #63201E;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.text-centerone{
+padding-bottom: 40px;
+padding-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 30px;
+  }
+  .info-text {
+    font-size: 15px;
+  }
+  .mini-map-card {
+    height: 190px;
+  }
+  .mini-pin-icon {
+    font-size: 20px;
+  }
+  .mini-pin-title {
+    font-size: 10px;
+  }
+}

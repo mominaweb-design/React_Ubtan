@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.location-page-wrapper {
+  background-color: #F7F1E8;
+  font-family: 'Poppins', sans-serif;
+  color: #2D2D2D;
+}
+
+/* Left Column Styling */
+.left-details-section {
+  border-right: 1px solid #DDD0C0;
+  background-color: #F7F1E8;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #2D2D2D;
+}
+
+/* Branch Cards */
+.branch-card {
+  position: relative;
+}
+
+.branch-icon {
+  color: #BD5B3E; /* Maroon icon */
+  font-size: 18px;
+}
+
+.branch-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D2D2D;
+}
+
+.branch-text {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.5;
+  padding-left: 26px;
+}
+
+.branch-info {
+  font-size: 13px;
+  color: #4A4A4A;
+  padding-left: 26px;
+}
+
+.info-icon {
+  color: #BD5B3E;
+  font-size: 13px;
+}
+
+/* Directions Button */
+.directions-btn {
+  background-color: #9A3B3B;
+  color: #FFFFFF !important;
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  margin-left: 26px;
+  transition: all 0.3s ease;
+}
+
+
+.directions-btn:hover {
+  background-color: #6D2D24;
+  box-shadow: 0 4px 10px rgba(109, 45, 36, 0.25);
+}
+
+/* Right Column Styling */
+.right-map-section {
+  background-color: #F2E8DA;
+}
+
+/* Responsive Handling */
+@media (max-width: 767px) {
+  .left-details-section {
+    border-right: none;
+    border-bottom: 1px solid #DDD0C0;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+}

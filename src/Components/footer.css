@@ -1,0 +1,41 @@
+/* Footer Bar with Top-Left Rounded Curve */
+.ubtana-footer {
+  background-color: #6D2D24; /* Warm Rust / Terracotta Brown */
+  min-height: 70px;
+  width: 100%;
+  /* border-top-left-radius: 40px; Reference image jaisa curved corner */
+  padding: 12px 0;
+  margin-top: auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Circular Icon Buttons */
+.social-icon-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: #FFFFFF;
+  color: #BD5B3E;
+  transform: translateY(-2px);
+}
+
+/* Bottom Text Styling */
+.footer-subtext {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-family: 'Poppins', sans-serif;
+}

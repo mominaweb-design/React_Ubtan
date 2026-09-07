@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================
+   GLOBAL PAGE STYLING
+=================================== */
+
+.about-us-wrapper {
+  background-color: #F7F1E8;
+  font-family: 'Poppins', sans-serif;
+  color: #2D2D2D;
+}
+
+/* Hero Arch Section */
+.hero-arch-img {
+  max-width: 850px;
+  width: 100%;
+  border-radius: 200px 200px 0 0;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Main Heading */
+.about-main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #6D2D24;
+}
+
+/* ===================================
+   PILLAR CARDS STYLING
+=================================== */
+
+.pillar-card {
+  transition: transform 0.3s ease;
+  min-height: 120px;
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+}
+
+.pillar-purity {
+  background-color: #BD5B3E;
+}
+
+.pillar-lab {
+  background-color: #FFFDF8;
+  border: 1px solid #DDD0C0;
+  color: #2D2D2D;
+}
+
+.pillar-sustainability {
+  background-color: #4A2B20;
+}
+
+.pillar-icon {
+  font-size: 22px;
+}
+
+/* ===================================
+   TIMELINE BACKGROUND (FIXED NO-BREAK)
+=================================== */
+
+.about-timeline-bg {
+  width: 100%;
+  min-height: 200px;
+  /* Image ko cut ya break hone se rokne ke liye */
+  background-size: 120% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Text Box styling for clarity over background image */
+.timeline-node {
+  /* background: rgba(253, 248, 238, 0.75); */
+  /* backdrop-filter: blur(4px); */
+  padding: 10px 14px;
+  border-radius: 12px;
+  /* border: 1px solid rgba(222, 208, 192, 0.5); */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); */
+}
+
+/*  */
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media (max-width: 992px) {
+  .location-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .location-content {
+    padding: 30px;
+  }
+
+  .location-title {
+    font-size: 34px;
+  }
+
+  .map-image {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-timeline-bg {
+    background-size: cover;
+    min-height: auto;
+    padding: 24px 12px !important;
+  }
+
+  .about-main-title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ==========================
+   PAGE
+========================== */
+
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #f8f3ec 0%,
+    #f6efe6 100%
+  );
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero-section {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ==========================
+   LEFT CONTENT
+========================== */
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 0.95;
+  font-weight: 700;
+  color: #3f382f;
+  margin-bottom: 25px;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 500px;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-btn-primary {
+  background: #9a4d37;
+  color: white !important;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-btn-primary:hover {
+  background: #7d3d2b;
+  transform: translateY(-2px);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: #9a4d37 !important;
+  border: 1.5px solid #9a4d37;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-btn-secondary:hover {
+  background: #9a4d37;
+  color: white !important;
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  height: 550px;
+  width: 300%;
+   max-width: 710px;
+
+  /* object-fit: contain;  */
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 991px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-left {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
