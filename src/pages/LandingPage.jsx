@@ -1,6 +1,6 @@
 import Navbar from '../Components/Navbar';
 import './styles/landingpage.css';
-
+import { Link } from 'react-router-dom';
 import heroImage from '../assets/landingbackground.png';
 
 const LandingPage = () => {
@@ -25,13 +25,13 @@ const LandingPage = () => {
               </p>
 
               <div className="hero-buttons">
-                <a href="/shop" className="btn hero-btn-primary">
-                  Explore Shop
-                </a>
+                <Link to="/shop" className="btn hero-btn-primary">
+  Explore Shop
+</Link>
 
-                <a href="/about" className="btn hero-btn-secondary">
-                  Our Story
-                </a>
+<Link to="/about" className="btn hero-btn-secondary">
+  Our Story
+</Link>
               </div>
             </div>
 
